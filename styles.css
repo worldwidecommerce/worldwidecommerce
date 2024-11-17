@@ -1,118 +1,61 @@
-/* Reset some default browser styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RYD & FUNK Vinyl</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-/* General body styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
+    <header>
+        <h1>RYD & FUNK Vinyl</h1>
+        <p>Experience the ultimate sound. The RYD & FUNK vinyl collection.</p>
+    </header>
 
-/* Header and navigation styles */
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem 0;
-}
+    <section id="album-info">
+        <div class="album-cover">
+            <img src="assets/album-cover.jpg" alt="RYD & FUNK Vinyl Cover">
+        </div>
+        <div class="album-details">
+            <h2>Album: RYD & FUNK</h2>
+            <p>Released: 2024</p>
+            <p>Genre: Funk, Soul, Hip-Hop</p>
+            <p>Label: RYD Productions</p>
+            <button class="buy-btn">Buy Vinyl</button>
+        </div>
+    </section>
 
-header .logo {
-    text-align: center;
-    font-size: 2rem;
-}
+    <section id="tracklisting">
+        <h2>Track Listing</h2>
+        <ul>
+            <li>1. Funkin' All Night</li>
+            <li>2. Smooth Vibes</li>
+            <li>3. RYD Groove</li>
+            <li>4. Soul Surge</li>
+            <li>5. Funk Revolution</li>
+        </ul>
+    </section>
 
-header .nav-links {
-    list-style: none;
-    text-align: center;
-    padding: 1rem;
-}
+    <section id="audio-preview">
+        <h2>Listen to a Preview</h2>
+        <audio controls>
+            <source src="assets/audio-preview.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
 
-header .nav-links li {
-    display: inline;
-    margin: 0 15px;
-}
+    <section id="about">
+        <h2>About RYD & FUNK</h2>
+        <p>RYD & FUNK is a dynamic duo blending classic funk rhythms with modern hip-hop and soul. Their sound is an energetic blend of old-school and contemporary vibes, perfect for vinyl collectors and music lovers alike.</p>
+    </section>
 
-header .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-}
+    <footer>
+        <p>&copy; 2024 RYD & FUNK. All rights reserved.</p>
+    </footer>
 
-/* Hero section */
-.hero {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 3rem 1rem;
-}
-
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-}
-
-/* Product section styles */
-#shop {
-    padding: 2rem;
-    text-align: center;
-}
-
-.product-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.product {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    width: 200px;
-    text-align: center;
-}
-
-.product img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.product h3 {
-    font-size: 1.25rem;
-    margin: 10px 0;
-}
-
-.product p {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-}
-
-.product button {
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.product button:hover {
-    background-color: #555;
-}
-
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
+    <script src="script.js"></script>
+</body>
+</html>
